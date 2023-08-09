@@ -1,0 +1,18 @@
+SMILES,General effects
+C1=CC=NC=C1,No obvious impact
+C1=CC=NC(=C1)C2=CC=CC=N2,Suppress HER
+C1=CC=NC(=C1)C2=NC(=CC=C2)C3=CC=CC=N3,No obvious impact
+C1=CC=NC(=C1)C2=NC(=NC(=N2)C3=CC=CC=N3)C4=CC=CC=N4,No obvious impact
+C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.Cl[Cu]Cl,No obvious impact
+C1=CC2=C(C=CC3=C2C=CC=N3)N=C1,No obvious impact
+CC1=NC2=C(C=C1)C=CC3=C2N=C(C=C3)C,Suppress HER and CO
+C1=CC2=C(C3=C(C=C2)N=CC=C3)N=C1,Suppress HER and CO
+C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1,Suppress HER and CO
+C1=CC2=CC(=C3C=CC=NC3=C2N=C1)N,Suppress HER and CO
+C1=NC2=NC=NC(=C2N1)N,Suppress HER
+C1=CC2=NNN=C2C=C1,Suppress HER
+C1=CC2=C(N=C1)N=CC=C2,Suppress HER
+C1=C(N=C2C(=NC(=NC2=N1)N)N)CO,Suppress HER
+CC1=C(N=C2C(=N1)C(=O)NC(=S)N2)C,MOSTLY Liquid Prod.
+CC(C)(C)C1=CC2=C(C(=C1)CC3=CC(=CC(=C3O)CC4=CC(=CC(=C4O)CC5=CC(=CC(=C5O)CC6=C(C(=CC(=C6)C(C)(C)C)CC7=C(C(=CC(=C7)C(C)(C)C)C2)O)O)C(C)(C)C)C(C)(C)C)C(C)(C)C)O,No obvious impact
+C1C2=C(C(=CC=C2)CC3=C(C(=CC=C3)CC4=C(C(=CC=C4)CC5=C(C(=CC=C5)CC6=CC=CC(=C6O)CC7=CC=CC(=C7O)CC8=CC=CC(=C8O)CC9=CC=CC1=C9O)O)O)O)O,No obvious impact
