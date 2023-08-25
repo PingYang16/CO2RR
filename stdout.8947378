@@ -1,0 +1,1059 @@
+07:56:57   Downloading http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/bace.csv to /home/pinyang_umass_edu/bace/bace.csv
+07:57:03   {'batch_size': 256,
+ 'class': 'core.Engine',
+ 'gpus': [0],
+ 'gradient_interval': 1,
+ 'log_interval': 100,
+ 'logger': 'logging',
+ 'num_worker': 0,
+ 'optimizer': {'amsgrad': False,
+               'betas': (0.9, 0.999),
+               'capturable': False,
+               'class': 'optim.Adam',
+               'differentiable': False,
+               'eps': 1e-08,
+               'foreach': None,
+               'fused': None,
+               'lr': 0.001,
+               'maximize': False,
+               'weight_decay': 0},
+ 'scheduler': None,
+ 'task': {'class': 'tasks.Unsupervised',
+          'graph_construction_model': None,
+          'model': {'activation': 'relu',
+                    'class': 'models.InfoGraph',
+                    'loss_weight': 1,
+                    'model': {'activation': 'relu',
+                              'batch_norm': True,
+                              'class': 'models.GIN',
+                              'concat_hidden': False,
+                              'edge_input_dim': 11,
+                              'eps': 0,
+                              'hidden_dims': [300, 300, 300, 300, 300],
+                              'input_dim': 22,
+                              'learn_eps': False,
+                              'num_mlp_layer': 2,
+                              'readout': 'mean',
+                              'short_cut': False},
+                    'num_mlp_layer': 2,
+                    'separate_model': False}},
+ 'test_set': None,
+ 'train_set': {'atom_feature': 'pretrain',
+               'bond_feature': 'pretrain',
+               'class': 'datasets.BACE',
+               'path': '~/bace/',
+               'verbose': 1},
+ 'valid_set': None}
+07:57:03   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:03   Epoch 0 begin
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   graph-node mutual information: -0.0364395
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 0 end
+07:57:04   duration: 1.45 secs
+07:57:04   speed: 4.15 batch / sec
+07:57:04   ETA: 2.39 mins
+07:57:04   max GPU memory: 439.2 MiB
+07:57:04   ------------------------------
+07:57:04   average graph-node mutual information: -0.15619
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 1 begin
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 1 end
+07:57:04   duration: 0.25 secs
+07:57:04   speed: 24.00 batch / sec
+07:57:04   ETA: 1.38 mins
+07:57:04   max GPU memory: 442.2 MiB
+07:57:04   ------------------------------
+07:57:04   average graph-node mutual information: 0.166252
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 2 begin
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 2 end
+07:57:04   duration: 0.24 secs
+07:57:04   speed: 24.77 batch / sec
+07:57:04   ETA: 1.04 mins
+07:57:04   max GPU memory: 448.2 MiB
+07:57:04   ------------------------------
+07:57:04   average graph-node mutual information: 0.298884
+07:57:04   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:04   Epoch 3 begin
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 3 end
+07:57:05   duration: 0.24 secs
+07:57:05   speed: 24.78 batch / sec
+07:57:05   ETA: 52.33 secs
+07:57:05   max GPU memory: 451.2 MiB
+07:57:05   ------------------------------
+07:57:05   average graph-node mutual information: 0.438861
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 4 begin
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 4 end
+07:57:05   duration: 0.25 secs
+07:57:05   speed: 24.44 batch / sec
+07:57:05   ETA: 46.09 secs
+07:57:05   max GPU memory: 446.0 MiB
+07:57:05   ------------------------------
+07:57:05   average graph-node mutual information: 0.546567
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 5 begin
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 5 end
+07:57:05   duration: 0.24 secs
+07:57:05   speed: 24.65 batch / sec
+07:57:05   ETA: 41.82 secs
+07:57:05   max GPU memory: 440.7 MiB
+07:57:05   ------------------------------
+07:57:05   average graph-node mutual information: 0.630057
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 6 begin
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 6 end
+07:57:05   duration: 0.25 secs
+07:57:05   speed: 24.34 batch / sec
+07:57:05   ETA: 38.74 secs
+07:57:05   max GPU memory: 448.3 MiB
+07:57:05   ------------------------------
+07:57:05   average graph-node mutual information: 0.683832
+07:57:05   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:05   Epoch 7 begin
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 7 end
+07:57:06   duration: 0.24 secs
+07:57:06   speed: 24.68 batch / sec
+07:57:06   ETA: 36.33 secs
+07:57:06   max GPU memory: 437.2 MiB
+07:57:06   ------------------------------
+07:57:06   average graph-node mutual information: 0.728318
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 8 begin
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 8 end
+07:57:06   duration: 0.24 secs
+07:57:06   speed: 24.54 batch / sec
+07:57:06   ETA: 34.41 secs
+07:57:06   max GPU memory: 448.7 MiB
+07:57:06   ------------------------------
+07:57:06   average graph-node mutual information: 0.778815
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 9 begin
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 9 end
+07:57:06   duration: 0.25 secs
+07:57:06   speed: 23.94 batch / sec
+07:57:06   ETA: 32.88 secs
+07:57:06   max GPU memory: 444.4 MiB
+07:57:06   ------------------------------
+07:57:06   average graph-node mutual information: 0.825012
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 10 begin
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 10 end
+07:57:06   duration: 0.24 secs
+07:57:06   speed: 24.64 batch / sec
+07:57:06   ETA: 31.53 secs
+07:57:06   max GPU memory: 446.5 MiB
+07:57:06   ------------------------------
+07:57:06   average graph-node mutual information: 0.862251
+07:57:06   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:06   Epoch 11 begin
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 11 end
+07:57:07   duration: 0.24 secs
+07:57:07   speed: 24.57 batch / sec
+07:57:07   ETA: 30.37 secs
+07:57:07   max GPU memory: 441.4 MiB
+07:57:07   ------------------------------
+07:57:07   average graph-node mutual information: 0.876109
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 12 begin
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 12 end
+07:57:07   duration: 0.25 secs
+07:57:07   speed: 24.49 batch / sec
+07:57:07   ETA: 29.36 secs
+07:57:07   max GPU memory: 445.0 MiB
+07:57:07   ------------------------------
+07:57:07   average graph-node mutual information: 0.896866
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 13 begin
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 13 end
+07:57:07   duration: 0.24 secs
+07:57:07   speed: 24.81 batch / sec
+07:57:07   ETA: 28.43 secs
+07:57:07   max GPU memory: 438.6 MiB
+07:57:07   ------------------------------
+07:57:07   average graph-node mutual information: 0.919036
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 14 begin
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 14 end
+07:57:07   duration: 0.25 secs
+07:57:07   speed: 24.30 batch / sec
+07:57:07   ETA: 27.63 secs
+07:57:07   max GPU memory: 452.2 MiB
+07:57:07   ------------------------------
+07:57:07   average graph-node mutual information: 0.943988
+07:57:07   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:07   Epoch 15 begin
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 15 end
+07:57:08   duration: 0.24 secs
+07:57:08   speed: 24.82 batch / sec
+07:57:08   ETA: 26.86 secs
+07:57:08   max GPU memory: 442.7 MiB
+07:57:08   ------------------------------
+07:57:08   average graph-node mutual information: 0.971061
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 16 begin
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   graph-node mutual information: 0.969881
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 16 end
+07:57:08   duration: 0.25 secs
+07:57:08   speed: 24.19 batch / sec
+07:57:08   ETA: 26.19 secs
+07:57:08   max GPU memory: 442.7 MiB
+07:57:08   ------------------------------
+07:57:08   average graph-node mutual information: 0.980271
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 17 begin
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 17 end
+07:57:08   duration: 0.25 secs
+07:57:08   speed: 24.28 batch / sec
+07:57:08   ETA: 25.57 secs
+07:57:08   max GPU memory: 442.8 MiB
+07:57:08   ------------------------------
+07:57:08   average graph-node mutual information: 0.963908
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 18 begin
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 18 end
+07:57:08   duration: 0.26 secs
+07:57:08   speed: 23.21 batch / sec
+07:57:08   ETA: 25.03 secs
+07:57:08   max GPU memory: 445.9 MiB
+07:57:08   ------------------------------
+07:57:08   average graph-node mutual information: 0.956598
+07:57:08   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:08   Epoch 19 begin
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 19 end
+07:57:09   duration: 0.25 secs
+07:57:09   speed: 23.84 batch / sec
+07:57:09   ETA: 24.49 secs
+07:57:09   max GPU memory: 446.2 MiB
+07:57:09   ------------------------------
+07:57:09   average graph-node mutual information: 0.983363
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 20 begin
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 20 end
+07:57:09   duration: 0.25 secs
+07:57:09   speed: 24.38 batch / sec
+07:57:09   ETA: 23.96 secs
+07:57:09   max GPU memory: 443.1 MiB
+07:57:09   ------------------------------
+07:57:09   average graph-node mutual information: 1.01968
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 21 begin
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 21 end
+07:57:09   duration: 0.25 secs
+07:57:09   speed: 23.98 batch / sec
+07:57:09   ETA: 23.47 secs
+07:57:09   max GPU memory: 442.2 MiB
+07:57:09   ------------------------------
+07:57:09   average graph-node mutual information: 1.04495
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 22 begin
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 22 end
+07:57:09   duration: 0.26 secs
+07:57:09   speed: 23.15 batch / sec
+07:57:09   ETA: 23.03 secs
+07:57:09   max GPU memory: 441.8 MiB
+07:57:09   ------------------------------
+07:57:09   average graph-node mutual information: 1.06283
+07:57:09   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:09   Epoch 23 begin
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 23 end
+07:57:10   duration: 0.24 secs
+07:57:10   speed: 24.64 batch / sec
+07:57:10   ETA: 22.55 secs
+07:57:10   max GPU memory: 444.5 MiB
+07:57:10   ------------------------------
+07:57:10   average graph-node mutual information: 1.07203
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 24 begin
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 24 end
+07:57:10   duration: 0.24 secs
+07:57:10   speed: 24.61 batch / sec
+07:57:10   ETA: 22.09 secs
+07:57:10   max GPU memory: 444.5 MiB
+07:57:10   ------------------------------
+07:57:10   average graph-node mutual information: 1.07332
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 25 begin
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 25 end
+07:57:10   duration: 0.24 secs
+07:57:10   speed: 24.75 batch / sec
+07:57:10   ETA: 21.65 secs
+07:57:10   max GPU memory: 444.2 MiB
+07:57:10   ------------------------------
+07:57:10   average graph-node mutual information: 1.08243
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 26 begin
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 26 end
+07:57:10   duration: 0.24 secs
+07:57:10   speed: 24.68 batch / sec
+07:57:10   ETA: 21.23 secs
+07:57:10   max GPU memory: 442.5 MiB
+07:57:10   ------------------------------
+07:57:10   average graph-node mutual information: 1.09211
+07:57:10   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:10   Epoch 27 begin
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 27 end
+07:57:11   duration: 0.24 secs
+07:57:11   speed: 24.68 batch / sec
+07:57:11   ETA: 20.81 secs
+07:57:11   max GPU memory: 452.0 MiB
+07:57:11   ------------------------------
+07:57:11   average graph-node mutual information: 1.09812
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 28 begin
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 28 end
+07:57:11   duration: 0.25 secs
+07:57:11   speed: 24.43 batch / sec
+07:57:11   ETA: 20.42 secs
+07:57:11   max GPU memory: 444.6 MiB
+07:57:11   ------------------------------
+07:57:11   average graph-node mutual information: 1.08624
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 29 begin
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 29 end
+07:57:11   duration: 0.25 secs
+07:57:11   speed: 24.29 batch / sec
+07:57:11   ETA: 20.03 secs
+07:57:11   max GPU memory: 444.2 MiB
+07:57:11   ------------------------------
+07:57:11   average graph-node mutual information: 1.08877
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 30 begin
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 30 end
+07:57:11   duration: 0.24 secs
+07:57:11   speed: 24.58 batch / sec
+07:57:11   ETA: 19.65 secs
+07:57:11   max GPU memory: 443.7 MiB
+07:57:11   ------------------------------
+07:57:11   average graph-node mutual information: 1.10823
+07:57:11   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:11   Epoch 31 begin
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 31 end
+07:57:12   duration: 0.25 secs
+07:57:12   speed: 24.34 batch / sec
+07:57:12   ETA: 19.29 secs
+07:57:12   max GPU memory: 442.5 MiB
+07:57:12   ------------------------------
+07:57:12   average graph-node mutual information: 1.12382
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 32 begin
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 32 end
+07:57:12   duration: 0.24 secs
+07:57:12   speed: 24.64 batch / sec
+07:57:12   ETA: 18.92 secs
+07:57:12   max GPU memory: 444.3 MiB
+07:57:12   ------------------------------
+07:57:12   average graph-node mutual information: 1.13752
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 33 begin
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   graph-node mutual information: 1.1509
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 33 end
+07:57:12   duration: 0.24 secs
+07:57:12   speed: 24.91 batch / sec
+07:57:12   ETA: 18.56 secs
+07:57:12   max GPU memory: 446.6 MiB
+07:57:12   ------------------------------
+07:57:12   average graph-node mutual information: 1.14647
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 34 begin
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 34 end
+07:57:12   duration: 0.24 secs
+07:57:12   speed: 24.86 batch / sec
+07:57:12   ETA: 18.21 secs
+07:57:12   max GPU memory: 445.0 MiB
+07:57:12   ------------------------------
+07:57:12   average graph-node mutual information: 1.1459
+07:57:12   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:12   Epoch 35 begin
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 35 end
+07:57:13   duration: 0.25 secs
+07:57:13   speed: 23.68 batch / sec
+07:57:13   ETA: 17.88 secs
+07:57:13   max GPU memory: 442.0 MiB
+07:57:13   ------------------------------
+07:57:13   average graph-node mutual information: 1.14483
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 36 begin
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 36 end
+07:57:13   duration: 0.25 secs
+07:57:13   speed: 24.21 batch / sec
+07:57:13   ETA: 17.54 secs
+07:57:13   max GPU memory: 441.7 MiB
+07:57:13   ------------------------------
+07:57:13   average graph-node mutual information: 1.14779
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 37 begin
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 37 end
+07:57:13   duration: 0.24 secs
+07:57:13   speed: 24.69 batch / sec
+07:57:13   ETA: 17.21 secs
+07:57:13   max GPU memory: 441.4 MiB
+07:57:13   ------------------------------
+07:57:13   average graph-node mutual information: 1.13203
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 38 begin
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 38 end
+07:57:13   duration: 0.24 secs
+07:57:13   speed: 24.62 batch / sec
+07:57:13   ETA: 16.88 secs
+07:57:13   max GPU memory: 442.4 MiB
+07:57:13   ------------------------------
+07:57:13   average graph-node mutual information: 1.14198
+07:57:13   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:13   Epoch 39 begin
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 39 end
+07:57:14   duration: 0.24 secs
+07:57:14   speed: 24.70 batch / sec
+07:57:14   ETA: 16.55 secs
+07:57:14   max GPU memory: 442.6 MiB
+07:57:14   ------------------------------
+07:57:14   average graph-node mutual information: 1.15416
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 40 begin
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 40 end
+07:57:14   duration: 0.24 secs
+07:57:14   speed: 24.59 batch / sec
+07:57:14   ETA: 16.23 secs
+07:57:14   max GPU memory: 446.7 MiB
+07:57:14   ------------------------------
+07:57:14   average graph-node mutual information: 1.16468
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 41 begin
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 41 end
+07:57:14   duration: 0.24 secs
+07:57:14   speed: 24.52 batch / sec
+07:57:14   ETA: 15.91 secs
+07:57:14   max GPU memory: 441.5 MiB
+07:57:14   ------------------------------
+07:57:14   average graph-node mutual information: 1.17242
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 42 begin
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 42 end
+07:57:14   duration: 0.25 secs
+07:57:14   speed: 24.44 batch / sec
+07:57:14   ETA: 15.60 secs
+07:57:14   max GPU memory: 444.9 MiB
+07:57:14   ------------------------------
+07:57:14   average graph-node mutual information: 1.17487
+07:57:14   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:14   Epoch 43 begin
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 43 end
+07:57:15   duration: 0.25 secs
+07:57:15   speed: 23.91 batch / sec
+07:57:15   ETA: 15.30 secs
+07:57:15   max GPU memory: 445.3 MiB
+07:57:15   ------------------------------
+07:57:15   average graph-node mutual information: 1.16991
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 44 begin
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 44 end
+07:57:15   duration: 0.27 secs
+07:57:15   speed: 22.49 batch / sec
+07:57:15   ETA: 15.02 secs
+07:57:15   max GPU memory: 442.2 MiB
+07:57:15   ------------------------------
+07:57:15   average graph-node mutual information: 1.1752
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 45 begin
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 45 end
+07:57:15   duration: 0.24 secs
+07:57:15   speed: 24.83 batch / sec
+07:57:15   ETA: 14.71 secs
+07:57:15   max GPU memory: 446.0 MiB
+07:57:15   ------------------------------
+07:57:15   average graph-node mutual information: 1.17647
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 46 begin
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 46 end
+07:57:15   duration: 0.24 secs
+07:57:15   speed: 24.59 batch / sec
+07:57:15   ETA: 14.40 secs
+07:57:15   max GPU memory: 445.0 MiB
+07:57:15   ------------------------------
+07:57:15   average graph-node mutual information: 1.18132
+07:57:15   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:15   Epoch 47 begin
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 47 end
+07:57:16   duration: 0.24 secs
+07:57:16   speed: 24.96 batch / sec
+07:57:16   ETA: 14.10 secs
+07:57:16   max GPU memory: 442.7 MiB
+07:57:16   ------------------------------
+07:57:16   average graph-node mutual information: 1.18246
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 48 begin
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 48 end
+07:57:16   duration: 0.24 secs
+07:57:16   speed: 25.09 batch / sec
+07:57:16   ETA: 13.79 secs
+07:57:16   max GPU memory: 437.8 MiB
+07:57:16   ------------------------------
+07:57:16   average graph-node mutual information: 1.18792
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 49 begin
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 49 end
+07:57:16   duration: 0.24 secs
+07:57:16   speed: 25.07 batch / sec
+07:57:16   ETA: 13.49 secs
+07:57:16   max GPU memory: 446.2 MiB
+07:57:16   ------------------------------
+07:57:16   average graph-node mutual information: 1.18937
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 50 begin
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   graph-node mutual information: 1.1805
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 50 end
+07:57:16   duration: 0.24 secs
+07:57:16   speed: 25.03 batch / sec
+07:57:16   ETA: 13.19 secs
+07:57:16   max GPU memory: 439.1 MiB
+07:57:16   ------------------------------
+07:57:16   average graph-node mutual information: 1.19076
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 51 begin
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 51 end
+07:57:16   duration: 0.25 secs
+07:57:16   speed: 24.48 batch / sec
+07:57:16   ETA: 12.90 secs
+07:57:16   max GPU memory: 441.9 MiB
+07:57:16   ------------------------------
+07:57:16   average graph-node mutual information: 1.18808
+07:57:16   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:16   Epoch 52 begin
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 52 end
+07:57:17   duration: 0.25 secs
+07:57:17   speed: 24.14 batch / sec
+07:57:17   ETA: 12.61 secs
+07:57:17   max GPU memory: 441.6 MiB
+07:57:17   ------------------------------
+07:57:17   average graph-node mutual information: 1.18262
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 53 begin
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 53 end
+07:57:17   duration: 0.24 secs
+07:57:17   speed: 24.99 batch / sec
+07:57:17   ETA: 12.32 secs
+07:57:17   max GPU memory: 443.3 MiB
+07:57:17   ------------------------------
+07:57:17   average graph-node mutual information: 1.18376
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 54 begin
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 54 end
+07:57:17   duration: 0.24 secs
+07:57:17   speed: 24.93 batch / sec
+07:57:17   ETA: 12.03 secs
+07:57:17   max GPU memory: 438.0 MiB
+07:57:17   ------------------------------
+07:57:17   average graph-node mutual information: 1.19346
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 55 begin
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 55 end
+07:57:17   duration: 0.24 secs
+07:57:17   speed: 24.91 batch / sec
+07:57:17   ETA: 11.74 secs
+07:57:17   max GPU memory: 444.2 MiB
+07:57:17   ------------------------------
+07:57:17   average graph-node mutual information: 1.19629
+07:57:17   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:17   Epoch 56 begin
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 56 end
+07:57:18   duration: 0.24 secs
+07:57:18   speed: 24.99 batch / sec
+07:57:18   ETA: 11.46 secs
+07:57:18   max GPU memory: 443.7 MiB
+07:57:18   ------------------------------
+07:57:18   average graph-node mutual information: 1.20279
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 57 begin
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 57 end
+07:57:18   duration: 0.24 secs
+07:57:18   speed: 24.93 batch / sec
+07:57:18   ETA: 11.17 secs
+07:57:18   max GPU memory: 442.1 MiB
+07:57:18   ------------------------------
+07:57:18   average graph-node mutual information: 1.20736
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 58 begin
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 58 end
+07:57:18   duration: 0.24 secs
+07:57:18   speed: 24.98 batch / sec
+07:57:18   ETA: 10.89 secs
+07:57:18   max GPU memory: 450.6 MiB
+07:57:18   ------------------------------
+07:57:18   average graph-node mutual information: 1.20909
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 59 begin
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 59 end
+07:57:18   duration: 0.24 secs
+07:57:18   speed: 24.87 batch / sec
+07:57:18   ETA: 10.60 secs
+07:57:18   max GPU memory: 441.9 MiB
+07:57:18   ------------------------------
+07:57:18   average graph-node mutual information: 1.20923
+07:57:18   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:18   Epoch 60 begin
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 60 end
+07:57:19   duration: 0.25 secs
+07:57:19   speed: 23.83 batch / sec
+07:57:19   ETA: 10.33 secs
+07:57:19   max GPU memory: 442.7 MiB
+07:57:19   ------------------------------
+07:57:19   average graph-node mutual information: 1.21315
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 61 begin
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 61 end
+07:57:19   duration: 0.24 secs
+07:57:19   speed: 25.12 batch / sec
+07:57:19   ETA: 10.05 secs
+07:57:19   max GPU memory: 441.1 MiB
+07:57:19   ------------------------------
+07:57:19   average graph-node mutual information: 1.21735
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 62 begin
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 62 end
+07:57:19   duration: 0.24 secs
+07:57:19   speed: 25.05 batch / sec
+07:57:19   ETA: 9.77 secs
+07:57:19   max GPU memory: 445.8 MiB
+07:57:19   ------------------------------
+07:57:19   average graph-node mutual information: 1.21566
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 63 begin
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 63 end
+07:57:19   duration: 0.25 secs
+07:57:19   speed: 24.49 batch / sec
+07:57:19   ETA: 9.50 secs
+07:57:19   max GPU memory: 444.9 MiB
+07:57:19   ------------------------------
+07:57:19   average graph-node mutual information: 1.21949
+07:57:19   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:19   Epoch 64 begin
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 64 end
+07:57:20   duration: 0.24 secs
+07:57:20   speed: 25.14 batch / sec
+07:57:20   ETA: 9.22 secs
+07:57:20   max GPU memory: 441.1 MiB
+07:57:20   ------------------------------
+07:57:20   average graph-node mutual information: 1.22172
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 65 begin
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 65 end
+07:57:20   duration: 0.24 secs
+07:57:20   speed: 25.09 batch / sec
+07:57:20   ETA: 8.94 secs
+07:57:20   max GPU memory: 447.0 MiB
+07:57:20   ------------------------------
+07:57:20   average graph-node mutual information: 1.22123
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 66 begin
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   graph-node mutual information: 1.20375
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 66 end
+07:57:20   duration: 0.24 secs
+07:57:20   speed: 24.96 batch / sec
+07:57:20   ETA: 8.67 secs
+07:57:20   max GPU memory: 441.7 MiB
+07:57:20   ------------------------------
+07:57:20   average graph-node mutual information: 1.21861
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 67 begin
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 67 end
+07:57:20   duration: 0.24 secs
+07:57:20   speed: 25.09 batch / sec
+07:57:20   ETA: 8.40 secs
+07:57:20   max GPU memory: 443.5 MiB
+07:57:20   ------------------------------
+07:57:20   average graph-node mutual information: 1.21286
+07:57:20   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:20   Epoch 68 begin
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 68 end
+07:57:21   duration: 0.24 secs
+07:57:21   speed: 24.75 batch / sec
+07:57:21   ETA: 8.12 secs
+07:57:21   max GPU memory: 443.9 MiB
+07:57:21   ------------------------------
+07:57:21   average graph-node mutual information: 1.20839
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 69 begin
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 69 end
+07:57:21   duration: 0.24 secs
+07:57:21   speed: 24.84 batch / sec
+07:57:21   ETA: 7.85 secs
+07:57:21   max GPU memory: 445.1 MiB
+07:57:21   ------------------------------
+07:57:21   average graph-node mutual information: 1.20967
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 70 begin
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 70 end
+07:57:21   duration: 0.24 secs
+07:57:21   speed: 24.85 batch / sec
+07:57:21   ETA: 7.58 secs
+07:57:21   max GPU memory: 441.8 MiB
+07:57:21   ------------------------------
+07:57:21   average graph-node mutual information: 1.19823
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 71 begin
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 71 end
+07:57:21   duration: 0.25 secs
+07:57:21   speed: 24.02 batch / sec
+07:57:21   ETA: 7.32 secs
+07:57:21   max GPU memory: 445.2 MiB
+07:57:21   ------------------------------
+07:57:21   average graph-node mutual information: 1.19244
+07:57:21   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:21   Epoch 72 begin
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 72 end
+07:57:22   duration: 0.24 secs
+07:57:22   speed: 24.98 batch / sec
+07:57:22   ETA: 7.05 secs
+07:57:22   max GPU memory: 444.0 MiB
+07:57:22   ------------------------------
+07:57:22   average graph-node mutual information: 1.19455
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 73 begin
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 73 end
+07:57:22   duration: 0.24 secs
+07:57:22   speed: 24.83 batch / sec
+07:57:22   ETA: 6.78 secs
+07:57:22   max GPU memory: 443.9 MiB
+07:57:22   ------------------------------
+07:57:22   average graph-node mutual information: 1.20523
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 74 begin
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 74 end
+07:57:22   duration: 0.24 secs
+07:57:22   speed: 24.98 batch / sec
+07:57:22   ETA: 6.51 secs
+07:57:22   max GPU memory: 440.9 MiB
+07:57:22   ------------------------------
+07:57:22   average graph-node mutual information: 1.21662
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 75 begin
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 75 end
+07:57:22   duration: 0.24 secs
+07:57:22   speed: 24.75 batch / sec
+07:57:22   ETA: 6.25 secs
+07:57:22   max GPU memory: 445.5 MiB
+07:57:22   ------------------------------
+07:57:22   average graph-node mutual information: 1.22124
+07:57:22   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:22   Epoch 76 begin
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 76 end
+07:57:23   duration: 0.24 secs
+07:57:23   speed: 24.95 batch / sec
+07:57:23   ETA: 5.98 secs
+07:57:23   max GPU memory: 450.7 MiB
+07:57:23   ------------------------------
+07:57:23   average graph-node mutual information: 1.22515
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 77 begin
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 77 end
+07:57:23   duration: 0.24 secs
+07:57:23   speed: 24.83 batch / sec
+07:57:23   ETA: 5.71 secs
+07:57:23   max GPU memory: 446.1 MiB
+07:57:23   ------------------------------
+07:57:23   average graph-node mutual information: 1.23138
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 78 begin
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 78 end
+07:57:23   duration: 0.24 secs
+07:57:23   speed: 24.91 batch / sec
+07:57:23   ETA: 5.45 secs
+07:57:23   max GPU memory: 446.5 MiB
+07:57:23   ------------------------------
+07:57:23   average graph-node mutual information: 1.2209
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 79 begin
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 79 end
+07:57:23   duration: 0.24 secs
+07:57:23   speed: 25.06 batch / sec
+07:57:23   ETA: 5.19 secs
+07:57:23   max GPU memory: 442.0 MiB
+07:57:23   ------------------------------
+07:57:23   average graph-node mutual information: 1.19591
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 80 begin
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 80 end
+07:57:23   duration: 0.24 secs
+07:57:23   speed: 25.20 batch / sec
+07:57:23   ETA: 4.92 secs
+07:57:23   max GPU memory: 441.9 MiB
+07:57:23   ------------------------------
+07:57:23   average graph-node mutual information: 1.20358
+07:57:23   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:23   Epoch 81 begin
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 81 end
+07:57:24   duration: 0.24 secs
+07:57:24   speed: 25.24 batch / sec
+07:57:24   ETA: 4.66 secs
+07:57:24   max GPU memory: 439.1 MiB
+07:57:24   ------------------------------
+07:57:24   average graph-node mutual information: 1.21229
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 82 begin
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 82 end
+07:57:24   duration: 0.25 secs
+07:57:24   speed: 24.29 batch / sec
+07:57:24   ETA: 4.40 secs
+07:57:24   max GPU memory: 442.3 MiB
+07:57:24   ------------------------------
+07:57:24   average graph-node mutual information: 1.22239
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 83 begin
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   graph-node mutual information: 1.22109
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 83 end
+07:57:24   duration: 0.24 secs
+07:57:24   speed: 24.55 batch / sec
+07:57:24   ETA: 4.14 secs
+07:57:24   max GPU memory: 444.9 MiB
+07:57:24   ------------------------------
+07:57:24   average graph-node mutual information: 1.22928
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 84 begin
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 84 end
+07:57:24   duration: 0.24 secs
+07:57:24   speed: 25.20 batch / sec
+07:57:24   ETA: 3.87 secs
+07:57:24   max GPU memory: 441.4 MiB
+07:57:24   ------------------------------
+07:57:24   average graph-node mutual information: 1.23253
+07:57:24   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:24   Epoch 85 begin
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 85 end
+07:57:25   duration: 0.24 secs
+07:57:25   speed: 25.15 batch / sec
+07:57:25   ETA: 3.61 secs
+07:57:25   max GPU memory: 438.8 MiB
+07:57:25   ------------------------------
+07:57:25   average graph-node mutual information: 1.23799
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 86 begin
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 86 end
+07:57:25   duration: 0.25 secs
+07:57:25   speed: 23.57 batch / sec
+07:57:25   ETA: 3.35 secs
+07:57:25   max GPU memory: 437.9 MiB
+07:57:25   ------------------------------
+07:57:25   average graph-node mutual information: 1.23081
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 87 begin
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 87 end
+07:57:25   duration: 0.24 secs
+07:57:25   speed: 25.07 batch / sec
+07:57:25   ETA: 3.09 secs
+07:57:25   max GPU memory: 440.9 MiB
+07:57:25   ------------------------------
+07:57:25   average graph-node mutual information: 1.22911
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 88 begin
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 88 end
+07:57:25   duration: 0.24 secs
+07:57:25   speed: 24.87 batch / sec
+07:57:25   ETA: 2.83 secs
+07:57:25   max GPU memory: 439.3 MiB
+07:57:25   ------------------------------
+07:57:25   average graph-node mutual information: 1.23422
+07:57:25   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:25   Epoch 89 begin
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 89 end
+07:57:26   duration: 0.24 secs
+07:57:26   speed: 24.97 batch / sec
+07:57:26   ETA: 2.57 secs
+07:57:26   max GPU memory: 443.4 MiB
+07:57:26   ------------------------------
+07:57:26   average graph-node mutual information: 1.2386
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 90 begin
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 90 end
+07:57:26   duration: 0.24 secs
+07:57:26   speed: 25.26 batch / sec
+07:57:26   ETA: 2.31 secs
+07:57:26   max GPU memory: 440.7 MiB
+07:57:26   ------------------------------
+07:57:26   average graph-node mutual information: 1.24078
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 91 begin
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 91 end
+07:57:26   duration: 0.24 secs
+07:57:26   speed: 24.94 batch / sec
+07:57:26   ETA: 2.06 secs
+07:57:26   max GPU memory: 443.1 MiB
+07:57:26   ------------------------------
+07:57:26   average graph-node mutual information: 1.24103
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 92 begin
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 92 end
+07:57:26   duration: 0.24 secs
+07:57:26   speed: 25.04 batch / sec
+07:57:26   ETA: 1.80 secs
+07:57:26   max GPU memory: 444.3 MiB
+07:57:26   ------------------------------
+07:57:26   average graph-node mutual information: 1.24401
+07:57:26   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:26   Epoch 93 begin
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 93 end
+07:57:27   duration: 0.24 secs
+07:57:27   speed: 25.23 batch / sec
+07:57:27   ETA: 1.54 secs
+07:57:27   max GPU memory: 443.6 MiB
+07:57:27   ------------------------------
+07:57:27   average graph-node mutual information: 1.24245
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 94 begin
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 94 end
+07:57:27   duration: 0.24 secs
+07:57:27   speed: 25.10 batch / sec
+07:57:27   ETA: 1.28 secs
+07:57:27   max GPU memory: 439.3 MiB
+07:57:27   ------------------------------
+07:57:27   average graph-node mutual information: 1.23519
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 95 begin
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 95 end
+07:57:27   duration: 0.25 secs
+07:57:27   speed: 23.87 batch / sec
+07:57:27   ETA: 1.03 secs
+07:57:27   max GPU memory: 455.0 MiB
+07:57:27   ------------------------------
+07:57:27   average graph-node mutual information: 1.23051
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 96 begin
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 96 end
+07:57:27   duration: 0.24 secs
+07:57:27   speed: 25.21 batch / sec
+07:57:27   ETA: 0.77 secs
+07:57:27   max GPU memory: 447.0 MiB
+07:57:27   ------------------------------
+07:57:27   average graph-node mutual information: 1.23613
+07:57:27   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:27   Epoch 97 begin
+07:57:28   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:28   Epoch 97 end
+07:57:28   duration: 0.24 secs
+07:57:28   speed: 25.15 batch / sec
+07:57:28   ETA: 0.51 secs
+07:57:28   max GPU memory: 446.4 MiB
+07:57:28   ------------------------------
+07:57:28   average graph-node mutual information: 1.23518
+07:57:28   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:28   Epoch 98 begin
+07:57:28   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:28   Epoch 98 end
+07:57:28   duration: 0.24 secs
+07:57:28   speed: 25.23 batch / sec
+07:57:28   ETA: 0.26 secs
+07:57:28   max GPU memory: 443.0 MiB
+07:57:28   ------------------------------
+07:57:28   average graph-node mutual information: 1.23725
+07:57:28   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:28   Epoch 99 begin
+07:57:28   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+07:57:28   Epoch 99 end
+07:57:28   duration: 0.24 secs
+07:57:28   speed: 24.86 batch / sec
+07:57:28   ETA: 0.00 secs
+07:57:28   max GPU memory: 448.2 MiB
+07:57:28   ------------------------------
+07:57:28   average graph-node mutual information: 1.23802
+07:57:28   Save checkpoint to bace_gin_infograph.pth

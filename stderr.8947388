@@ -1,0 +1,3 @@
+Loading anaconda version 2022.10
+Loading /home/pinyang_umass_edu/CO2RR/CO2RR.csv:   0%|          | 0/18 [00:00<?, ?it/s]Loading /home/pinyang_umass_edu/CO2RR/CO2RR.csv: 100%|██████████| 18/18 [00:00<00:00, 34791.46it/s]
+Constructing molecules from SMILES:   0%|          | 0/17 [00:00<?, ?it/s]Constructing molecules from SMILES: 100%|██████████| 17/17 [00:00<00:00, 285.35it/s]
